@@ -1,0 +1,14 @@
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.deps.json
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.runtimeconfig.json
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.runtimeconfig.dev.json
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.dll
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.csproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.RazorAssemblyInfo.cache
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.RazorAssemblyInfo.cs
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.AssemblyInfoInputs.cache
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.AssemblyInfo.cs
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.RazorTargetAssemblyInfo.cache
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.pdb
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.dll
+c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.pdb
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.csprojAssemblyReference.cache

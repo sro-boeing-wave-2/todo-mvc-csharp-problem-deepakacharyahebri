@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.deps.json
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.runtimeconfig.json
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.dll
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.pdb
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.dll
+C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple.Tests\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.Tests.pdb
