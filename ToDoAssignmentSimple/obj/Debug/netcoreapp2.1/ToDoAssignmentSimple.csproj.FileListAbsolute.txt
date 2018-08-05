@@ -12,3 +12,17 @@ c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\bin\Debug\
 c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.dll
 c:\users\admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.pdb
 C:\Users\Admin\source\repos\ToDoAssignmentSimple\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.csprojAssemblyReference.cache
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.deps.json
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.runtimeconfig.json
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.runtimeconfig.dev.json
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.dll
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.pdb
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.csprojAssemblyReference.cache
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.csproj.CoreCompileInputs.cache
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.RazorAssemblyInfo.cache
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.RazorAssemblyInfo.cs
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.AssemblyInfoInputs.cache
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.AssemblyInfo.cs
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.RazorTargetAssemblyInfo.cache
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.dll
+D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.pdb
