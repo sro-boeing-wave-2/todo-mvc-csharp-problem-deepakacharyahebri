@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using ToDoAssignmentSimple.Models;
+using ToDoAssignmentSimple.Services;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace ToDoAssignmentSimple
@@ -36,6 +37,10 @@ namespace ToDoAssignmentSimple
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
+            services.AddScoped<IToDoNoteService, ToDoNoteService>();
+
+            services.AddDbContext<ToDoTesterContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("ToDoTesterContext")));
 
         }
 

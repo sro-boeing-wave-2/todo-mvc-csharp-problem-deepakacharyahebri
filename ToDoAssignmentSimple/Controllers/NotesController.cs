@@ -19,6 +19,10 @@ namespace ToDoAssignmentSimple.Controllers
         {
             _context = context;
         }
+        public NotesController()
+        {
+
+        }
 
         // GET: api/Notes
         [HttpGet]

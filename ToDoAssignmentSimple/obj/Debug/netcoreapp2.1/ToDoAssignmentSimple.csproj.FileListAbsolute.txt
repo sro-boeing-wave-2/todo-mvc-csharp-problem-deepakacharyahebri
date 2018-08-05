@@ -17,7 +17,6 @@ D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimp
 D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.runtimeconfig.dev.json
 D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.dll
 D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\bin\Debug\netcoreapp2.1\ToDoAssignmentSimple.pdb
-D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.csprojAssemblyReference.cache
 D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.csproj.CoreCompileInputs.cache
 D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.RazorAssemblyInfo.cache
 D:\EntityFramework\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignmentSimple\obj\Debug\netcoreapp2.1\ToDoAssignmentSimple.RazorAssemblyInfo.cs

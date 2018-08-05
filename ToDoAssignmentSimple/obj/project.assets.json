@@ -38,6 +38,19 @@
           "lib/netstandard1.3/FluentAssertions.dll": {}
         }
       },
+      "GenFu/1.4.22": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.Reflection.TypeExtensions": "4.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/GenFu.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/GenFu.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5861,6 +5874,19 @@
         "lib/wpa81/FluentAssertions.pdb",
         "lib/wpa81/FluentAssertions.pri",
         "lib/wpa81/FluentAssertions.xml"
+      ]
+    },
+    "GenFu/1.4.22": {
+      "sha512": "ddTTfclr+cx2hgjD5c36i73UkrEVVJd4J43Y9kzeqLFbJk0fmggwQb2nZaBHgZRES6IWGiQbkmMz2GvZln1RZA==",
+      "type": "package",
+      "path": "genfu/1.4.22",
+      "files": [
+        "genfu.1.4.22.nupkg.sha512",
+        "genfu.nuspec",
+        "lib/net45/GenFu.dll",
+        "lib/net46/GenFu.dll",
+        "lib/net461/GenFu.dll",
+        "lib/netstandard1.3/GenFu.dll"
       ]
     },
     "Libuv/1.10.0": {
@@ -14950,6 +14976,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "FluentAssertions >= 4.19.2",
+      "GenFu >= 1.4.22",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.TestHost >= 2.0.0",
@@ -15004,6 +15031,10 @@
           "FluentAssertions": {
             "target": "Package",
             "version": "[4.19.2, )"
+          },
+          "GenFu": {
+            "target": "Package",
+            "version": "[1.4.22, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
