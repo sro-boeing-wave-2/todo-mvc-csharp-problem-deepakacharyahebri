@@ -35,6 +35,7 @@ namespace ToDoAssignment.Controllers
         {
             if (!ModelState.IsValid)
             {
+                Console.WriteLine("I'm here");
                 return BadRequest(ModelState);
             }
 
@@ -49,17 +50,18 @@ namespace ToDoAssignment.Controllers
         }
 
         [HttpGet("search/{title}")]
-        public IEnumerable<Notes> SearchByTiitel([FromRoute] string title)
+        public async Task<IEnumerable<Notes>> SearchByTiitel([FromRoute] string title)
         {
-            var x = _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title.Contains(title));
+            var x = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title.Contains(title)).ToListAsync();
             return x;
         }
 
         // get by title
         [HttpGet("title/{title}")]
-        public IEnumerable<Notes> SearchByTitle([FromRoute] string title)
+        public async Task<IEnumerable<Notes>> SearchByTitle([FromRoute] string title)
         {
-            return _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title == title);
+            var xx = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title == title).ToListAsync();
+            return xx;
         }
 
         [HttpGet("label/{label}")]
@@ -71,9 +73,10 @@ namespace ToDoAssignment.Controllers
 
         }
         [HttpGet("pinned")]
-        public IEnumerable<Notes> PinnedNotes()
+        public async Task<IActionResult> PinnedNotes()
         {
-            return _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.PinStatus == true);
+            var pinned = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.PinStatus == true).ToListAsync();
+            return Ok(pinned);
         }
 
         // PUT: api/Notes/5
