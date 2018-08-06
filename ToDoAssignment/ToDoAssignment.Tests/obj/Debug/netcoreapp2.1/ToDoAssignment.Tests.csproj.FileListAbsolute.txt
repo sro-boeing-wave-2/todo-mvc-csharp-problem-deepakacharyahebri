@@ -1,0 +1,17 @@
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.deps.json
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.runtimeconfig.json
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.runtimeconfig.dev.json
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.dll
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.dll
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.pdb
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.csprojAssemblyReference.cache
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.csproj.CoreCompileInputs.cache
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.AssemblyInfoInputs.cache
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.AssemblyInfo.cs
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.csproj.CopyComplete
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.pdb
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.dll
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.pdb
