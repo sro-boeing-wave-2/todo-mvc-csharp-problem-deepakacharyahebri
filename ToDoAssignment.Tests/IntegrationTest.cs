@@ -126,6 +126,29 @@ namespace ToDoAssignment.Tests
 
             var DeleteResponse = await _client.DeleteAsync("/api/notes/1");
             DeleteResponse.EnsureSuccessStatusCode();
+
+            var ResponsePost = await _client.PostAsync("/api/notes", stringContent);
+
+            Notes note = new Notes
+            {
+                Id = 1,
+                Title = "Suits",
+                PlainText = "Season 6 is Releasing Soon",
+                PinStatus = false,
+
+            };
+            var dataPut = JsonConvert.SerializeObject(note);
+            var stringContentPut = new StringContent(dataPut, UnicodeEncoding.UTF8, "application/json");
+            var TestPut = await _client.PutAsync("/api/Notes/1", stringContentPut);
+            Assert.Equal(TestPut.StatusCode.ToString(), "NoContent");
+            var TestGetByIdAfterPut = await _client.GetAsync("/api/Notes/1");
+            var contentAfterPut = await TestGetByIdAfterPut.Content.ReadAsStringAsync();
+            Console.WriteLine(contentAfterPut);
+            //var ActualDataToTestGetAfterPut = JObject.Parse(contentAfterPut);
+            ////var ActualDataToTestGet = ActualData[0];
+            //Assert.Equal(ActualDataToTestGetAfterPut["Id"].ToString(), "1");
+            //Assert.Equal(ActualDataToTestGetAfterPut["Title"], "Young Sheldon");
+
         }
     }
 }
