@@ -65,11 +65,11 @@ namespace ToDoAssignment.Controllers
         }
 
         [HttpGet("label/{label}")]
-        public IActionResult SearchByLabel([FromRoute] string label)
+        public async Task<IActionResult> SearchByLabel([FromRoute] string label)
         {
             //throw new Exception("Not Implemented");
             var NonNullDatas = _context.Notes.Include(s => s.CheckLists).Include(s => s.Labels).Where(x => x.Labels != null);
-            return Ok(NonNullDatas.Where(x => x.Labels.Any(y => y.LabelData == label)));
+            return Ok(await NonNullDatas.Where(x => x.Labels.Any(y => y.LabelData == label)).ToListAsync());
 
         }
         [HttpGet("pinned")]
@@ -166,7 +166,7 @@ namespace ToDoAssignment.Controllers
 
             await _context.SaveChangesAsync();
 
-            return Ok(Notes);
+            return Ok();
         }
 
         private bool NoteExists(int id)

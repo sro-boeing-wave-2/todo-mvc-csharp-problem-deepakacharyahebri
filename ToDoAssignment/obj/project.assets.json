@@ -12225,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment\\ToDoAssignment.csproj",
+      "projectUniqueName": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment.csproj",
       "projectName": "ToDoAssignment",
-      "projectPath": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment\\ToDoAssignment.csproj",
+      "projectPath": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment\\obj\\",
+      "outputPath": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

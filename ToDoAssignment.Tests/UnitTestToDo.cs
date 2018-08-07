@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore.InMemory;
 using System.Collections.Generic;
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using FluentAssertions;
 
 namespace ToDoAssignment.Tests
 {
@@ -17,7 +18,8 @@ namespace ToDoAssignment.Tests
         public UnitTestToDo()
         {
             var dbOptionBuilder = new DbContextOptionsBuilder<ToDoContext>();
-            dbOptionBuilder.UseInMemoryDatabase("TempDB");
+            dbOptionBuilder.EnableSensitiveDataLogging();
+            dbOptionBuilder.UseInMemoryDatabase(Guid.NewGuid().ToString());
             todocontext = new ToDoContext(dbOptionBuilder.Options);
             _controller = new NotesController(todocontext);
             PrepareData(todocontext);
@@ -27,6 +29,7 @@ namespace ToDoAssignment.Tests
             var notes =
                 new Notes()
                 {
+                    Id = 2,
                     Title = "My First Note",
                     PlainText = "This is my plaintext",
                     PinStatus = true,
@@ -48,108 +51,138 @@ namespace ToDoAssignment.Tests
                 };
             todocontext.Notes.Add(notes);
             todocontext.SaveChanges();
-
         }
         [Fact]
-        public async void Test1()
+        public async void TestForGetAll()
         {
             //PrepareData(todocontext);
-            var res = await _controller.GetNotes();
-            var OkObj = res as List<Notes>;
-            Assert.Single(OkObj);
+            var Res = await _controller.GetNotes();
+            var ListOfNotes = Res as List<Notes>;
+            Assert.Single(ListOfNotes);
+            var ToBeChecked = ListOfNotes[0];
+            //Console.WriteLine("Id ="+ToBeChecked.Id);
+            Assert.Equal("My First Note", ToBeChecked.Title);
+            Assert.Equal("This is my plaintext", ToBeChecked.PlainText);
+            Assert.Equal(true, ToBeChecked.PinStatus);
         }
 
         [Fact]
-        public async void Test2()
+        public async void TestGetById()
         {
             //PrepareData(todocontext);
-            var result = await _controller.GetNote(1);
-            try
-            {
-                var status = result as OkObjectResult;
-                Assert.Equal(200, status.StatusCode);
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("I'm here");
-            }
+            var r = await _controller.GetNotes();
+            var ListOfNotes = r as List<Notes>;
+            var ToBeChecked = ListOfNotes[0];
+            //Console.WriteLine("Changed Id",ToBeChecked.Id);
+            var result = await _controller.GetNote(ToBeChecked.Id);
+            var OkObject = result as OkObjectResult;
+            Console.WriteLine(OkObject.StatusCode);
+            //Notes note = new Notes();
+            var note = OkObject.Value as Notes;
+            
+            //Console.WriteLine("Fine");
+            //Console.WriteLine(note.PlainText);
+            //Assert.Equal(note.Title, "My First Note");
+            note.PlainText.Should().Be("This is my plaintext");
+            note.Title.Should().Be("My First Note");
+            Assert.Equal(true, ToBeChecked.PinStatus);
         }
 
         [Fact]
-        public async void Test3()
+        public async void SearchByTitle()
         {
             //PrepareData(todocontext);
             var result = await _controller.SearchByTitle("My First Note");
-            foreach (var item in result)
-            {
-                Console.WriteLine(item.Id);
-            }
             var Lists = result as List<Notes>;
-            Assert.Equal(3, Lists.Count);
+            var ToBeTested = Lists[0];
+            Assert.Equal(1, Lists.Count);
+            ToBeTested.PlainText.Should().Be("This is my plaintext");
+            ToBeTested.PinStatus.Should().Be(true);
+            ToBeTested.Title.Should().Be("My First Note");
         }
 
         [Fact]
-        public async void Test4()
+        public async void SearchByLabel()
         {
             //PrepareData(todocontext);
-            var result = _controller.SearchByLabel("labeldata 1");
+            var result = await _controller.SearchByLabel("labeldata 1");
             var OkObj = result as OkObjectResult;
+            var Notes = OkObj.Value as List<Notes>;
             Assert.Equal(OkObj.StatusCode, 200);
+            var ToBeTested = Notes[0];
+            ToBeTested.PlainText.Should().Be("This is my plaintext");
+            ToBeTested.PinStatus.Should().Be(true);
+            ToBeTested.Title.Should().Be("My First Note");
         }
 
         [Fact]
-        public async void Test5()
+        public async void CheckingPinnedNotes()
         {
-            var result = _controller.PinnedNotes();
-            Assert.NotNull(result);
+            var result = await _controller.PinnedNotes();
+            var OkObj = result as OkObjectResult;
+            var Notes = OkObj.Value as List<Notes>;
+            Assert.Equal(OkObj.StatusCode, 200);
+            var ToBeTested = Notes[0];
+            ToBeTested.PlainText.Should().Be("This is my plaintext");
+            ToBeTested.Title.Should().Be("My First Note");
+            ToBeTested.PinStatus.Should().Be(true);
         }
 
-        //[Fact]
-        //public async void Test6()
-        //{
-        //    Notes note = new Notes
-        //    {
-        //        Title = "PUT",
-        //        PlainText = "Put sentence",
-        //        PinStatus = true,
-        //    };
-        //    var result = await _controller.PutNote(1, note);
-        //    var resultAsOkObjectResult = result as OkObjectResult;
-        //    //var notes = resultAsOkObjectResult.Value as Notes;
-        //    Assert.Equal(resultAsOkObjectResult.StatusCode, 204);
-        //}
-
         [Fact]
-        public async void Test7()
+        public async void TestingPost()
         {
             Notes note = new Notes
             {
-                Title = "PUT",
-                PlainText = "Put sentence",
+                Id = 5,
+                Title = "POSTING",
+                PlainText = "POSTING PLAIN TEXT",
                 PinStatus = true,
             };
             var result = await _controller.PostNote(note);
             var resultAsOkObjectResult = result as CreatedAtActionResult;
-            var notes = resultAsOkObjectResult.Value as Notes;
-            Assert.NotNull(notes);
-        }
-
-        [Fact]
-        public async void Test8()
-        {
-            var result = await _controller.DeleteNote(1);
-            var resultAsOkObjectResult = result as OkObjectResult;
-            var notes = resultAsOkObjectResult.Value as Notes;
-            Assert.NotNull(notes);
+            var ToBeTested = resultAsOkObjectResult.Value as Notes;
+            ToBeTested.PlainText.Should().Be("POSTING PLAIN TEXT");
+            ToBeTested.PinStatus.Should().Be(true);
+            ToBeTested.Title.Should().Be("POSTING");
         }
 
         //[Fact]
-        //public async void Test9()
+        //public async void TestingPut()
         //{
-        //    var result = await _controller.DeleteNoteByLabel("labeldata 1");
+        //    Notes note = new Notes
+        //    {
+        //        Id =2,
+        //        Title = "PUT",
+        //        PlainText = "Put sentence",
+        //        PinStatus = true,
+        //    };
+        //    //var r = await _controller.GetNotes();
+        //    //var ListOfNotes = r as List<Notes>;
+        //    //var ToBeChecked = ListOfNotes[0];
+        //    //note.Id = ToBeChecked.Id;
+        //    var result = await _controller.PutNote(2, note);
         //    var resultAsOkObjectResult = result as OkObjectResult;
+        //    //var notes = resultAsOkObjectResult.Value as Notes;
+        //    Assert.Equal(resultAsOkObjectResult.StatusCode, 400);
+        //}
+
+        
+
+        //[Fact]
+        //public async void Test8()
+        //{
+        //    var result = await _controller.DeleteNote(7);
+        //    var resultAsOkObjectResult = result as OkObjectResult;
+        //    Console.WriteLine(resultAsOkObjectResult);
         //    var notes = resultAsOkObjectResult.Value as Notes;
         //    Assert.NotNull(notes);
         //}
+
+        [Fact]
+        public async void DeleteNodeByLabel()
+        {
+            var result = await _controller.DeleteNoteByLabel("labeldata 1");
+            result.Should().BeOfType<OkResult>();
+        }
     }
 }

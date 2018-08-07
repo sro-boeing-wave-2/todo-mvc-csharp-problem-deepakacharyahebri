@@ -12,3 +12,17 @@ D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToD
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.pdb
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.dll
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.pdb
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.deps.json
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.runtimeconfig.json
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.runtimeconfig.dev.json
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.dll
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.pdb
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.csprojAssemblyReference.cache
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.csproj.CoreCompileInputs.cache
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.RazorAssemblyInfo.cache
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.RazorAssemblyInfo.cs
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.AssemblyInfoInputs.cache
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.AssemblyInfo.cs
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.RazorTargetAssemblyInfo.cache
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.dll
+D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.pdb
