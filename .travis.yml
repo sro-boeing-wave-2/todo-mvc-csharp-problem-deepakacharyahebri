@@ -19,4 +19,4 @@ dotnet: 2.1
 script:
 
   - dotnet restore
-  - dotnet test
+  - dotnet test ToDoAssignment.Tests

@@ -33,7 +33,7 @@ namespace ToDoAssignment.Tests
             var Response = await _client.GetAsync("/api/notes");
             var ResponseBody = await Response.Content.ReadAsStringAsync();
             //Console.WriteLine("Body"+ResponseBody.);
-            Assert.Equal(2, ResponseBody.Length);
+            Response.EnsureSuccessStatusCode();
         }
 
         [Fact]
@@ -76,5 +76,7 @@ namespace ToDoAssignment.Tests
             var ResponseGet = await _client.GetAsync("/api/notes");
             ResponseGet.EnsureSuccessStatusCode();
         }
+
     }
+
 }
