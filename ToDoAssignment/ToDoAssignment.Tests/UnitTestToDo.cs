@@ -104,20 +104,20 @@ namespace ToDoAssignment.Tests
             Assert.NotNull(result);
         }
 
-        [Fact]
-        public async void Test6()
-        {
-            Notes note = new Notes
-            {
-                Title = "PUT",
-                PlainText = "Put sentence",
-                PinStatus = true,
-            };
-            var result = await _controller.PutNote(1, note);
-            var resultAsOkObjectResult = result as OkObjectResult;
-            //var notes = resultAsOkObjectResult.Value as Notes;
-            Assert.Equal(resultAsOkObjectResult.StatusCode, 204);
-        }
+        //[Fact]
+        //public async void Test6()
+        //{
+        //    Notes note = new Notes
+        //    {
+        //        Title = "PUT",
+        //        PlainText = "Put sentence",
+        //        PinStatus = true,
+        //    };
+        //    var result = await _controller.PutNote(1, note);
+        //    var resultAsOkObjectResult = result as OkObjectResult;
+        //    //var notes = resultAsOkObjectResult.Value as Notes;
+        //    Assert.Equal(resultAsOkObjectResult.StatusCode, 204);
+        //}
 
         [Fact]
         public async void Test7()

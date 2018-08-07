@@ -33,7 +33,7 @@ namespace ToDoAssignment
             if (Environment.IsEnvironment("Testing"))
             {
                 services.AddDbContext<ToDoContext>(options =>
-                    options.UseInMemoryDatabase("TestDB"));
+                    options.UseInMemoryDatabase("TestingDB"));
             }
             else
             {
