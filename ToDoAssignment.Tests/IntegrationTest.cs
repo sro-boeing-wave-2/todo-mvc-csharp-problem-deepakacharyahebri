@@ -119,10 +119,10 @@ namespace ToDoAssignment.Tests
             Console.WriteLine(await ResponseForGetFirst.Content.ReadAsStringAsync());
             var JArrayFormat = JArray.Parse(result);
             var JObjectNotes = JArrayFormat[0];
-            Assert.Equal(JObjectNotes["id"].ToString(), "1");
-            Assert.Equal(JObjectNotes["title"].ToString(), "My First Note");
-            Assert.Equal(JObjectNotes["plainText"].ToString(), "This is my plaintext");
-            Assert.Equal(JObjectNotes["pinStatus"].ToString(), "True");
+            Assert.Equal("1", JObjectNotes["id"].ToString());
+            Assert.Equal("My First Note", JObjectNotes["title"].ToString());
+            Assert.Equal("This is my plaintext", JObjectNotes["plainText"].ToString());
+            Assert.Equal("True", JObjectNotes["pinStatus"].ToString());
 
             var DeleteResponse = await _client.DeleteAsync("/api/notes/1");
             DeleteResponse.EnsureSuccessStatusCode();
