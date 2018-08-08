@@ -25,8 +25,8 @@ namespace ToDoAssignment.Controllers
         [HttpGet]
         public async Task<IEnumerable<Notes>> GetNotes()
         {
-            var x = await _context.Notes.Include(s => s.Labels).Include(y => y.CheckLists).ToListAsync();
-            return x;
+            var AllNotes = await _context.Notes.Include(s => s.Labels).Include(y => y.CheckLists).ToListAsync();
+            return AllNotes;
         }
 
         // GET: api/Notes/5
@@ -35,7 +35,6 @@ namespace ToDoAssignment.Controllers
         {
             if (!ModelState.IsValid)
             {
-                Console.WriteLine("I'm here");
                 return BadRequest(ModelState);
             }
 
@@ -50,18 +49,18 @@ namespace ToDoAssignment.Controllers
         }
 
         [HttpGet("search/{title}")]
-        public async Task<IEnumerable<Notes>> SearchByTiitel([FromRoute] string title)
+        public async Task<IEnumerable<Notes>> SearchByTitlee([FromRoute] string title)
         {
-            var x = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title.Contains(title)).ToListAsync();
-            return x;
+            var SearchByTitleResults = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title.Contains(title)).ToListAsync();
+            return SearchByTitleResults;
         }
 
         // get by title
         [HttpGet("title/{title}")]
         public async Task<IEnumerable<Notes>> SearchByTitle([FromRoute] string title)
         {
-            var xx = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title == title).ToListAsync();
-            return xx;
+            var FindByTitleResults = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title == title).ToListAsync();
+            return FindByTitleResults;
         }
 
         [HttpGet("label/{label}")]
@@ -75,8 +74,8 @@ namespace ToDoAssignment.Controllers
         [HttpGet("pinned")]
         public async Task<IActionResult> PinnedNotes()
         {
-            var pinned = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.PinStatus == true).ToListAsync();
-            return Ok(pinned);
+            var Pinned = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.PinStatus == true).ToListAsync();
+            return Ok(Pinned);
         }
 
         // PUT: api/Notes/5
