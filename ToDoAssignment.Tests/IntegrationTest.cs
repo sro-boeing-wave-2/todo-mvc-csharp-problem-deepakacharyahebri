@@ -51,18 +51,18 @@ namespace ToDoAssignment.Tests
         public async Task TestPost()
         {
             var notes =
-                new Notes()
+                new Note()
                 {
                     Id = 1,
                     Title = "My First Note",
                     PlainText = "This is my plaintext",
                     PinStatus = true,
-                    CheckLists = new List<CheckList>()
+                    CheckList = new List<CheckList>()
                     {
                         new CheckList()
                         {
                             CheckListData="checklist data 1",
-                            ChickListStatus=true
+                            CheckListStatus=true
                         }
                     },
                     Labels = new List<Label>()
@@ -85,18 +85,18 @@ namespace ToDoAssignment.Tests
         public async Task TestGetByIdAfterPost()
         {
             var notes =
-                new Notes()
+                new Note()
                 {
                     Id = 1,
                     Title = "My First Note",
                     PlainText = "This is my plaintext",
                     PinStatus = true,
-                    CheckLists = new List<CheckList>()
+                    CheckList = new List<CheckList>()
                     {
                         new CheckList()
                         {
                             CheckListData="checklist data 1",
-                            ChickListStatus=true
+                            CheckListStatus=true
                         }
                     },
                     Labels = new List<Label>()
@@ -129,13 +129,12 @@ namespace ToDoAssignment.Tests
 
             var ResponsePost = await _client.PostAsync("/api/notes", stringContent);
 
-            Notes note = new Notes
+            Note note = new Note
             {
                 Id = 1,
                 Title = "Suits",
                 PlainText = "Season 6 is Releasing Soon",
                 PinStatus = false,
-
             };
             var dataPut = JsonConvert.SerializeObject(note);
             var stringContentPut = new StringContent(dataPut, UnicodeEncoding.UTF8, "application/json");

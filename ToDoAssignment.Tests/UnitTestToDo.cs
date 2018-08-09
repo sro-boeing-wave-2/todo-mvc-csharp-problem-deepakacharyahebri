@@ -29,9 +29,9 @@ namespace ToDoAssignment.Tests
         {
             using (var todocontext = new ToDoContext(options))
             {
-                var NotesToAdd = new List<Notes>
+                var NotesToAdd = new List<Note>
                 {
-                    new Notes()
+                    new Note()
                     {
                         Id = 1,
                         PlainText = "This is my plaintext",
@@ -46,19 +46,19 @@ namespace ToDoAssignment.Tests
                                 LabelData ="Label Data 2"
                             }
                         },
-                        CheckLists =new List<CheckList>
+                        CheckList =new List<CheckList>
                         {
                             new CheckList {
                                 CheckListData ="CheckList Data 1",
-                                ChickListStatus =true
+                                CheckListStatus =true
                             },
                             new CheckList {
                                 CheckListData ="CheckList Data 2",
-                                ChickListStatus =false
+                                CheckListStatus =false
                             }
                         }
                     },
-                    new Notes()
+                    new Note()
                     {
                         Id = 2,
                         PlainText = "PlainText 2",
@@ -73,15 +73,15 @@ namespace ToDoAssignment.Tests
                                 LabelData ="Label Data 4"
                             }
                         },
-                        CheckLists =new List<CheckList>
+                        CheckList =new List<CheckList>
                         {
                             new CheckList {
                                 CheckListData ="CheckList Data 3",
-                                ChickListStatus =true
+                                CheckListStatus =true
                             },
                             new CheckList {
                                 CheckListData ="CheckList Data 4",
-                                ChickListStatus =false
+                                CheckListStatus =false
                             }
                         }
                     },
@@ -97,7 +97,7 @@ namespace ToDoAssignment.Tests
             //PrepareData(todocontext);
             var _controller = GetController();
             var Res = await _controller.GetNotes();
-            var ListOfNotes = Res as List<Notes>;
+            var ListOfNotes = Res as List<Note>;
             Assert.Equal(2, ListOfNotes.Count);
             var ToBeChecked = ListOfNotes[0];
             //Console.WriteLine("Id ="+ToBeChecked.Id);
@@ -119,7 +119,7 @@ namespace ToDoAssignment.Tests
             var OkObject = result as OkObjectResult;
             Console.WriteLine(OkObject.StatusCode);
             //Notes note = new Notes();
-            var note = OkObject.Value as Notes;
+            var note = OkObject.Value as Note;
             
             //Console.WriteLine("Fine");
             //Console.WriteLine(note.PlainText);
@@ -135,7 +135,7 @@ namespace ToDoAssignment.Tests
             var _controller = GetController();
             //PrepareData(todocontext);
             var result = await _controller.SearchByTitle("My First Note");
-            var Lists = result as List<Notes>;
+            var Lists = result as List<Note>;
             var ToBeTested = Lists[0];
             Assert.Equal(1, Lists.Count);
             ToBeTested.PlainText.Should().Be("This is my plaintext");
@@ -150,7 +150,7 @@ namespace ToDoAssignment.Tests
             //PrepareData(todocontext);
             var result = await _controller.SearchByLabel("Label Data 1");
             var OkObj = result as OkObjectResult;
-            var Notes = OkObj.Value as List<Notes>;
+            var Notes = OkObj.Value as List<Note>;
             Assert.Equal(OkObj.StatusCode, 200);
             var ToBeTested = Notes[0];
             ToBeTested.PlainText.Should().Be("This is my plaintext");
@@ -164,7 +164,7 @@ namespace ToDoAssignment.Tests
             var _controller = GetController();
             var result = await _controller.PinnedNotes();
             var OkObj = result as OkObjectResult;
-            var Notes = OkObj.Value as List<Notes>;
+            var Notes = OkObj.Value as List<Note>;
             Assert.Equal(OkObj.StatusCode, 200);
             var ToBeTested = Notes[0];
             ToBeTested.PlainText.Should().Be("This is my plaintext");
@@ -176,7 +176,7 @@ namespace ToDoAssignment.Tests
         public async void TestingPost()
         {
             var _controller = GetController();
-            Notes note = new Notes
+            Note note = new Note
             {
                 Id = 3,
                 Title = "POSTING",
@@ -185,7 +185,7 @@ namespace ToDoAssignment.Tests
             };
             var result = await _controller.PostNote(note);
             var resultAsOkObjectResult = result as CreatedAtActionResult;
-            var ToBeTested = resultAsOkObjectResult.Value as Notes;
+            var ToBeTested = resultAsOkObjectResult.Value as Note;
             ToBeTested.PlainText.Should().Be("POSTING PLAIN TEXT");
             ToBeTested.PinStatus.Should().Be(true);
             ToBeTested.Title.Should().Be("POSTING");
@@ -199,7 +199,7 @@ namespace ToDoAssignment.Tests
             //var ListOfNotes = r as List<Notes>;
             //var ToBeChecked = ListOfNotes[0];
             //note.Id = ToBeChecked.Id;
-            var NotePut = new Notes()
+            var NotePut = new Note()
             {
                 Id = 2,
                 Title = "Updated"

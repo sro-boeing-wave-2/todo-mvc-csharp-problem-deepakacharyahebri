@@ -23,9 +23,9 @@ namespace ToDoAssignment.Controllers
 
         // GET: api/Notes
         [HttpGet]
-        public async Task<IEnumerable<Notes>> GetNotes()
+        public async Task<IEnumerable<Note>> GetNotes()
         {
-            var AllNotes = await _context.Notes.Include(s => s.Labels).Include(y => y.CheckLists).ToListAsync();
+            var AllNotes = await _context.Notes.Include(s => s.Labels).Include(y => y.CheckList).ToListAsync();
             return AllNotes;
         }
 
@@ -38,7 +38,7 @@ namespace ToDoAssignment.Controllers
                 return BadRequest(ModelState);
             }
 
-            var note = await _context.Notes.Include(s => s.Labels).Include(y => y.CheckLists).SingleOrDefaultAsync(x => x.Id == id);
+            var note = await _context.Notes.Include(s => s.Labels).Include(y => y.CheckList).SingleOrDefaultAsync(x => x.Id == id);
 
             if (note == null)
             {
@@ -49,17 +49,17 @@ namespace ToDoAssignment.Controllers
         }
 
         [HttpGet("search/{title}")]
-        public async Task<IEnumerable<Notes>> SearchByTitlee([FromRoute] string title)
+        public async Task<IEnumerable<Note>> SearchByTitlee([FromRoute] string title)
         {
-            var SearchByTitleResults = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title.Contains(title)).ToListAsync();
+            var SearchByTitleResults = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckList).Where(s => s.Title.Contains(title)).ToListAsync();
             return SearchByTitleResults;
         }
 
         // get by title
         [HttpGet("title/{title}")]
-        public async Task<IEnumerable<Notes>> SearchByTitle([FromRoute] string title)
+        public async Task<IEnumerable<Note>> SearchByTitle([FromRoute] string title)
         {
-            var FindByTitleResults = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.Title == title).ToListAsync();
+            var FindByTitleResults = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckList).Where(s => s.Title == title).ToListAsync();
             return FindByTitleResults;
         }
 
@@ -67,20 +67,20 @@ namespace ToDoAssignment.Controllers
         public async Task<IActionResult> SearchByLabel([FromRoute] string label)
         {
             //throw new Exception("Not Implemented");
-            var NonNullDatas = _context.Notes.Include(s => s.CheckLists).Include(s => s.Labels).Where(x => x.Labels != null);
+            var NonNullDatas = _context.Notes.Include(s => s.CheckList).Include(s => s.Labels).Where(x => x.Labels != null);
             return Ok(await NonNullDatas.Where(x => x.Labels.Any(y => y.LabelData == label)).ToListAsync());
 
         }
         [HttpGet("pinned")]
         public async Task<IActionResult> PinnedNotes()
         {
-            var Pinned = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).Where(s => s.PinStatus == true).ToListAsync();
+            var Pinned = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckList).Where(s => s.PinStatus == true).ToListAsync();
             return Ok(Pinned);
         }
 
         // PUT: api/Notes/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutNote([FromRoute] int id, [FromBody] Notes note)
+        public async Task<IActionResult> PutNote([FromRoute] int id, [FromBody] Note note)
         {
             if (!ModelState.IsValid)
             {
@@ -115,7 +115,7 @@ namespace ToDoAssignment.Controllers
 
         // POST: api/Notes
         [HttpPost]
-        public async Task<IActionResult> PostNote([FromBody] Notes note)
+        public async Task<IActionResult> PostNote([FromBody] Note note)
         {
             if (!ModelState.IsValid)
             {
@@ -138,7 +138,7 @@ namespace ToDoAssignment.Controllers
             }
 
             //var note = await _context.Notes.FindAsync(id);
-            var note = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckLists).SingleOrDefaultAsync(s => s.Id == id);
+            var note = await _context.Notes.Include(s => s.Labels).Include(s => s.CheckList).SingleOrDefaultAsync(s => s.Id == id);
             if (note == null)
             {
                 return NotFound();
@@ -153,13 +153,13 @@ namespace ToDoAssignment.Controllers
         [HttpDelete("deletelabel/{Label}")]
         public async Task<IActionResult> DeleteNoteByLabel([FromRoute] string Label)
         {
-            /*if (!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
-            }*/
+            }
 
             //var note = await _context.Notes.FindAsync(id);
-            var NonNullDatas = _context.Notes.Include(s => s.CheckLists).Include(s => s.Labels).Where(x => x.Labels != null);
+            var NonNullDatas = _context.Notes.Include(s => s.CheckList).Include(s => s.Labels).Where(x => x.Labels != null);
             var Notes = NonNullDatas.Where(x => x.Labels.Any(v => v.LabelData == Label));
             _context.Notes.RemoveRange(Notes);
 
@@ -173,7 +173,12 @@ namespace ToDoAssignment.Controllers
             return _context.Notes.Any(e => e.Id == id);
         }
         /*private readonly ToDoContext _context;
-
+        [HttpDelete("deleteall")]
+        public async Task DeleteAll([FromRoute] string Label)
+        {
+            _context.Notes.RemoveRange(_context.Notes);
+            await _context.SaveChangesAsync();
+        }
         public NotesController(ToDoContext context)
         {
             _context = context;

@@ -77,7 +77,7 @@ namespace ToDoAssignment.Migrations
             modelBuilder.Entity("ToDoAssignment.Models.CheckList", b =>
                 {
                     b.HasOne("ToDoAssignment.Models.Notes")
-                        .WithMany("CheckLists")
+                        .WithMany("2")
                         .HasForeignKey("NotesId");
                 });
 

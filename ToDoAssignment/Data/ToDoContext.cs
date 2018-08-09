@@ -13,6 +13,6 @@ namespace ToDoAssignment.Models
         {
         }
 
-        public DbSet<ToDoAssignment.Models.Notes> Notes { get; set; }
+        public DbSet<ToDoAssignment.Models.Note> Notes { get; set; }
     }
 }

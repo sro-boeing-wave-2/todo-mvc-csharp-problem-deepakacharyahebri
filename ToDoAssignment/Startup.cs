@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using ToDoAssignment.Models;
 using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.AspNetCore.Http;
 
 namespace ToDoAssignment
 {
@@ -58,11 +59,31 @@ namespace ToDoAssignment
             {
                 app.UseHsts();
             }
-            app.UseSwagger();
+            
+            //app.Use((context, next) => {
+            //    Console.WriteLine("I am the Logger");
+            //    return next();
+            //});
+
+
+            //app.Use((context, next) => {
+            //    if (context.Request.Method == "GET" && context.Request.Path == "/ping")
+            //    {
+            //        return context.Response.WriteAsync("Pong");
+            //    }
+            //    else 
+            //    {
+            //        return next();
+            //    }
+            //});
+            
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+
+            
+            app.UseSwagger();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

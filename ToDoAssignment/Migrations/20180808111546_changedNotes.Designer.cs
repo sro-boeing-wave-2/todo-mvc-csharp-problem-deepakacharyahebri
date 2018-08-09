@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ToDoAssignment.Models;
 
 namespace ToDoAssignment.Migrations
 {
     [DbContext(typeof(ToDoContext))]
-    partial class ToDoContextModelSnapshot : ModelSnapshot
+    [Migration("20180808111546_changedNotes")]
+    partial class changedNotes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -75,7 +77,7 @@ namespace ToDoAssignment.Migrations
             modelBuilder.Entity("ToDoAssignment.Models.CheckList", b =>
                 {
                     b.HasOne("ToDoAssignment.Models.Note")
-                        .WithMany("CheckList")
+                        .WithMany("2")
                         .HasForeignKey("NoteId");
                 });
 

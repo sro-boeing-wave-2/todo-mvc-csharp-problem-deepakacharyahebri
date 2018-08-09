@@ -9,6 +9,6 @@ namespace ToDoAssignment.Models
     {
         public int Id { get; set; }
         public string CheckListData { get; set; }
-        public bool ChickListStatus { get; set; }
+        public bool CheckListStatus { get; set; }
     }
 }
