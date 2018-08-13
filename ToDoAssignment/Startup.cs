@@ -14,6 +14,8 @@ using Microsoft.EntityFrameworkCore;
 using ToDoAssignment.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace ToDoAssignment
 {
@@ -24,7 +26,7 @@ namespace ToDoAssignment
             Configuration = configuration;
             Environment = environment;
         }
-
+        
         public IConfiguration Configuration { get; }
         public IHostingEnvironment Environment { get; }
 
@@ -40,12 +42,15 @@ namespace ToDoAssignment
             else
             {
                 services.AddDbContext<ToDoContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ToDoContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("DockerToDoContext")));
             }
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,7 +64,7 @@ namespace ToDoAssignment
             {
                 app.UseHsts();
             }
-            
+
             //app.Use((context, next) => {
             //    Console.WriteLine("I am the Logger");
             //    return next();
@@ -76,14 +81,15 @@ namespace ToDoAssignment
             //        return next();
             //    }
             //});
-            
+            app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+            /*var context = app.ApplicationServices.GetService<ToDoContext>(); //needed for docker
+            context.Database.Migrate(); //needed for docker */
 
-            
-            app.UseSwagger();
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }

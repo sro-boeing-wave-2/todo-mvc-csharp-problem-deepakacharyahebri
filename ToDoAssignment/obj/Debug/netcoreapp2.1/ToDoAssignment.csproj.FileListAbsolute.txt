@@ -26,3 +26,17 @@ D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToD
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.RazorTargetAssemblyInfo.cache
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.dll
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.pdb
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.deps.json
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.runtimeconfig.json
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.dll
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\bin\Debug\netcoreapp2.1\ToDoAssignment.pdb
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.AssemblyInfo.cs
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.RazorTargetAssemblyInfo.cache
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.dll
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment\obj\Debug\netcoreapp2.1\ToDoAssignment.pdb

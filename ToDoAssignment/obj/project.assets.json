@@ -12326,6 +12326,7 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Mvc.Core >= 2.1.1",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
       "Swashbuckle.AspNetCore >= 3.0.0"
@@ -12338,11 +12339,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\docker compose using\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment.csproj",
       "projectName": "ToDoAssignment",
-      "projectPath": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\docker compose using\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\ToDoAssignment.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\EntityFrameworkWithoutServices\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\docker compose using\\todo-mvc-csharp-problem-deepakacharyahebri\\ToDoAssignment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12379,6 +12380,10 @@
             "autoReferenced": true
           },
           "Microsoft.AspNetCore.Mvc.Core": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[2.1.1, )"
           },

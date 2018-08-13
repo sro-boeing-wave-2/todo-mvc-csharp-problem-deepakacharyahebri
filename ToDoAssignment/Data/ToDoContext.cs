@@ -14,5 +14,7 @@ namespace ToDoAssignment.Models
         }
 
         public DbSet<ToDoAssignment.Models.Note> Notes { get; set; }
+        public DbSet<ToDoAssignment.Models.Label> Labels { get; set; }
+        public DbSet<ToDoAssignment.Models.CheckList> CheckList { get; set; }
     }
 }

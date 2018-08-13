@@ -32,3 +32,20 @@ D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToD
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.csproj.CopyComplete
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.dll
 D:\EntityFrameworkWithoutServices\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.pdb
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.deps.json
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.runtimeconfig.json
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.dll
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.Tests.pdb
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.dll
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\bin\Debug\netcoreapp2.1\ToDoAssignment.pdb
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.AssemblyInfo.cs
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.csproj.CopyComplete
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.dll
+C:\Users\Admin\Desktop\docker compose using\todo-mvc-csharp-problem-deepakacharyahebri\ToDoAssignment.Tests\obj\Debug\netcoreapp2.1\ToDoAssignment.Tests.pdb
